@@ -1,0 +1,407 @@
+Not Found: /byebooks/
+Not Found: /byebooks/launch
+Internal Server Error: /byebooks/create_user
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 119, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 368, in resolve
+    sub_match = pattern.resolve(new_path)
+  File "/usr/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 240, in resolve
+    return ResolverMatch(self.callback, args, kwargs, self.name)
+  File "/usr/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 247, in callback
+    self._callback = get_callable(self._callback_str)
+  File "/usr/local/lib/python2.7/site-packages/django/utils/lru_cache.py", line 101, in wrapper
+    result = user_function(*args, **kwds)
+  File "/usr/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 106, in get_callable
+    mod = import_module(mod_name)
+  File "/usr/lib64/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/var/www/html/byebooks/byebooks/endpoints.py", line 1, in <module>
+    from pymongo import MongoClient
+ImportError: No module named pymongo
+Not Found: /byebooks/create_user
+Not Found: /byebooks/create_user
+Not Found: /byebooks/create_user
+Internal Server Error: /byebooks/create_user
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/html/byebooks/byebooks/endpoints.py", line 28, in create_user
+    user = {'user_id': request.POST['user_id']}
+  File "/usr/local/lib/python2.7/site-packages/django/utils/datastructures.py", line 322, in __getitem__
+    raise MultiValueDictKeyError(repr(key))
+MultiValueDictKeyError: "'user_id'"
+Internal Server Error: /byebooks/create_user
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/html/byebooks/byebooks/endpoints.py", line 36, in create_user
+    campus_mod['users'].append(user['user_id'])
+  File "/usr/local/lib64/python2.7/site-packages/pymongo/cursor.py", line 535, in __getitem__
+    "instances" % index)
+TypeError: index 'users' cannot be applied to Cursor instances
+Internal Server Error: /byebooks/create_user
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/html/byebooks/byebooks/endpoints.py", line 39, in create_user
+    return HttpResponse(json.dumps(response), content_type='application/json')
+  File "/usr/lib64/python2.7/json/__init__.py", line 243, in dumps
+    return _default_encoder.encode(obj)
+  File "/usr/lib64/python2.7/json/encoder.py", line 207, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/lib64/python2.7/json/encoder.py", line 270, in iterencode
+    return _iterencode(o, 0)
+  File "/usr/lib64/python2.7/json/encoder.py", line 184, in default
+    raise TypeError(repr(o) + " is not JSON serializable")
+TypeError: ObjectId('55df6e41cf8c4675a6f20745') is not JSON serializable
+Not Found: /byebooks/create_user
+Not Found: /byebooks/create_user
+Not Found: /byebooks/create_user
+Not Found: /byebooks/create_user/
+Internal Server Error: /byebooks/create_user
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/html/byebooks/byebooks/endpoints.py", line 28, in create_user
+    user = {'user_id': request.POST['user_id']}
+  File "/usr/local/lib/python2.7/site-packages/django/utils/datastructures.py", line 322, in __getitem__
+    raise MultiValueDictKeyError(repr(key))
+MultiValueDictKeyError: "'user_id'"
+Internal Server Error: /byebooks/create_user
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/html/byebooks/byebooks/endpoints.py", line 39, in create_user
+    return HttpResponse(bson.dumps(response), content_type='application/json')
+  File "/usr/lib64/python2.7/json/__init__.py", line 243, in dumps
+    return _default_encoder.encode(obj)
+  File "/usr/lib64/python2.7/json/encoder.py", line 207, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/lib64/python2.7/json/encoder.py", line 270, in iterencode
+    return _iterencode(o, 0)
+  File "/usr/lib64/python2.7/json/encoder.py", line 184, in default
+    raise TypeError(repr(o) + " is not JSON serializable")
+TypeError: ObjectId('55df6e41cf8c4675a6f20745') is not JSON serializable
+Not Found: /byebooks/create_user
+Not Found: /byebooks/create_user
+Internal Server Error: /byebooks/create_user
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/html/byebooks/byebooks/endpoints.py", line 28, in create_user
+    user = {'user_id': request.POST['user_id']}
+  File "/usr/local/lib/python2.7/site-packages/django/utils/datastructures.py", line 322, in __getitem__
+    raise MultiValueDictKeyError(repr(key))
+MultiValueDictKeyError: "'user_id'"
+Not Found: /byebooks/create_user
+Internal Server Error: /byebooks/create_user
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/html/byebooks/byebooks/endpoints.py", line 36, in create_user
+    campus_mod['users'].append(user['user_id'])
+  File "/usr/local/lib64/python2.7/site-packages/pymongo/cursor.py", line 535, in __getitem__
+    "instances" % index)
+TypeError: index 'users' cannot be applied to Cursor instances
+Internal Server Error: /byebooks/create_user
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/html/byebooks/byebooks/endpoints.py", line 28, in create_user
+    user = {'user_id': request.POST['user_id']}
+  File "/usr/local/lib/python2.7/site-packages/django/utils/datastructures.py", line 322, in __getitem__
+    raise MultiValueDictKeyError(repr(key))
+MultiValueDictKeyError: "'user_id'"
+Internal Server Error: /byebooks/create_user
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/html/byebooks/byebooks/endpoints.py", line 39, in create_user
+    return HttpResponse(dumps(response), content_type='application/json')
+  File "/usr/lib64/python2.7/json/__init__.py", line 243, in dumps
+    return _default_encoder.encode(obj)
+  File "/usr/lib64/python2.7/json/encoder.py", line 207, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/lib64/python2.7/json/encoder.py", line 270, in iterencode
+    return _iterencode(o, 0)
+  File "/usr/lib64/python2.7/json/encoder.py", line 184, in default
+    raise TypeError(repr(o) + " is not JSON serializable")
+TypeError: ObjectId('55df6e41cf8c4675a6f20745') is not JSON serializable
+Internal Server Error: /byebooks/get_wishlist
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/html/byebooks/byebooks/endpoints.py", line 28, in get_wishlist
+    return HttpResponse(json.dumps(user['wishlist']))
+KeyError: 'wishlist'
+Internal Server Error: /byebooks/create_user
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/html/byebooks/byebooks/endpoints.py", line 34, in create_user
+    user = {'user_id': request.POST['user_id']}
+  File "/usr/local/lib/python2.7/site-packages/django/utils/datastructures.py", line 322, in __getitem__
+    raise MultiValueDictKeyError(repr(key))
+MultiValueDictKeyError: "'user_id'"
+Not Found: /byebooks/cre
+Not Found: /byebooks/get_user
+Internal Server Error: /byebooks/create_user
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 119, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 368, in resolve
+    sub_match = pattern.resolve(new_path)
+  File "/usr/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 240, in resolve
+    return ResolverMatch(self.callback, args, kwargs, self.name)
+  File "/usr/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 247, in callback
+    self._callback = get_callable(self._callback_str)
+  File "/usr/local/lib/python2.7/site-packages/django/utils/lru_cache.py", line 101, in wrapper
+    result = user_function(*args, **kwds)
+  File "/usr/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 106, in get_callable
+    mod = import_module(mod_name)
+  File "/usr/lib64/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/var/www/html/byebooks/byebooks/endpoints.py", line 22
+    def get_conversation(l, with):
+                               ^
+SyntaxError: invalid syntax
+Internal Server Error: /byebooks/create_user
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 119, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 368, in resolve
+    sub_match = pattern.resolve(new_path)
+  File "/usr/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 240, in resolve
+    return ResolverMatch(self.callback, args, kwargs, self.name)
+  File "/usr/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 247, in callback
+    self._callback = get_callable(self._callback_str)
+  File "/usr/local/lib/python2.7/site-packages/django/utils/lru_cache.py", line 101, in wrapper
+    result = user_function(*args, **kwds)
+  File "/usr/local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 106, in get_callable
+    mod = import_module(mod_name)
+  File "/usr/lib64/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/var/www/html/byebooks/byebooks/endpoints.py", line 68
+    conversations.append({'with':other_user['user_id'],'content:[],'unread':0})
+                                                                         ^
+SyntaxError: invalid syntax
+Internal Server Error: /byebooks/send_message
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/html/byebooks/byebooks/endpoints.py", line 61, in send_message
+    other_user_query = {'user_id':msg['to']}
+KeyError: 'to'
+Internal Server Error: /byebooks/remove_conversation
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/html/byebooks/byebooks/endpoints.py", line 63, in endpoint_remove_conversation
+    user = db['users'].find_one(user_query)
+NameError: global name 'db' is not defined
+Internal Server Error: /byebooks/search
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/html/byebooks/byebooks/endpoints.py", line 60, in endpoint_search
+    campus = get['campus']
+  File "/usr/local/lib/python2.7/site-packages/django/utils/datastructures.py", line 322, in __getitem__
+    raise MultiValueDictKeyError(repr(key))
+MultiValueDictKeyError: "'campus'"
+Internal Server Error: /byebooks/search
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/html/byebooks/byebooks/endpoints.py", line 68, in endpoint_search
+    if listing[key] == query[key]:
+KeyError: u'[object FormData]'
+Internal Server Error: /byebooks/create_user
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/html/byebooks/byebooks/endpoints.py", line 233, in create_user
+    user['password'] = hash_password(request.POST['password'])
+  File "/usr/local/lib/python2.7/site-packages/django/utils/datastructures.py", line 322, in __getitem__
+    raise MultiValueDictKeyError(repr(key))
+MultiValueDictKeyError: "'password'"
+Internal Server Error: /byebooks/send_message
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/html/byebooks/byebooks/endpoints.py", line 120, in send_message
+    if not(request.POST['token'] == user['token']): return HttpResponse('Invalid')
+  File "/usr/local/lib/python2.7/site-packages/django/utils/datastructures.py", line 322, in __getitem__
+    raise MultiValueDictKeyError(repr(key))
+MultiValueDictKeyError: "'token'"
+Internal Server Error: /byebooks/send_message
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/html/byebooks/byebooks/endpoints.py", line 120, in send_message
+    if not(request.POST['token'] == user['token']): return HttpResponse('Invalid')
+  File "/usr/local/lib/python2.7/site-packages/django/utils/datastructures.py", line 322, in __getitem__
+    raise MultiValueDictKeyError(repr(key))
+MultiValueDictKeyError: "'token'"
+Not Found: /byebooks/
+Internal Server Error: /byebooks/append_wishlist
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/html/byebooks/byebooks/endpoints.py", line 187, in append_wishlist
+    if not(request.POST['token'] == user['token']): return HttpResponse('Invalid')
+  File "/usr/local/lib/python2.7/site-packages/django/utils/datastructures.py", line 322, in __getitem__
+    raise MultiValueDictKeyError(repr(key))
+MultiValueDictKeyError: "'token'"
+Internal Server Error: /byebooks/append_wishlist
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/html/byebooks/byebooks/endpoints.py", line 187, in append_wishlist
+    if not(request.POST['token'] == user['token']): return HttpResponse('Invalid')
+  File "/usr/local/lib/python2.7/site-packages/django/utils/datastructures.py", line 322, in __getitem__
+    raise MultiValueDictKeyError(repr(key))
+MultiValueDictKeyError: "'token'"
+Internal Server Error: /byebooks/get_wishlist
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/html/byebooks/byebooks/endpoints.py", line 232, in get_wishlist
+    user = {'user_id':request.GET['user_id']}
+  File "/usr/local/lib/python2.7/site-packages/django/utils/datastructures.py", line 322, in __getitem__
+    raise MultiValueDictKeyError(repr(key))
+MultiValueDictKeyError: "'user_id'"
+Internal Server Error: /byebooks/get_conversations
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/html/byebooks/byebooks/endpoints.py", line 228, in get_conversations
+    if not(request.POST['token'] == user['token']): return HttpResponse('Invalid')
+  File "/usr/local/lib/python2.7/site-packages/django/utils/datastructures.py", line 322, in __getitem__
+    raise MultiValueDictKeyError(repr(key))
+MultiValueDictKeyError: "'token'"
+Not Found: /byebooks/resolve/123
+Internal Server Error: /byebooks/resolve
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/html/byebooks/byebooks/endpoints.py", line 66, in resolve_id
+    user_id = request.GET['user_id']
+  File "/usr/local/lib/python2.7/site-packages/django/utils/datastructures.py", line 322, in __getitem__
+    raise MultiValueDictKeyError(repr(key))
+MultiValueDictKeyError: "'user_id'"
+Internal Server Error: /byebooks/resolve
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/html/byebooks/byebooks/endpoints.py", line 68, in resolve_id
+    user = db['users'].find_one(user_query)
+NameError: global name 'user_query' is not defined
+Internal Server Error: /byebooks/resolve
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/html/byebooks/byebooks/endpoints.py", line 70, in resolve_id
+    response = {'name':user.name}
+AttributeError: 'dict' object has no attribute 'name'
+Not Found: /byebooks/resolve/123
+Not Found: /byebooks/resolve/
+Not Found: /byebooks/
+Not Found: /byebooks/resolve/
+Not Found: /byebooks/resolve/
+Not Found: /byebooks/resolve
+Internal Server Error: /byebooks/resolve
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/html/byebooks/byebooks/endpoints.py", line 73, in resolve_id
+    names.append(user['name'])
+TypeError: 'NoneType' object has no attribute '__getitem__'
+Internal Server Error: /byebooks/resolve
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/html/byebooks/byebooks/endpoints.py", line 73, in resolve_id
+    names.append(user['name'])
+TypeError: 'NoneType' object has no attribute '__getitem__'
+Internal Server Error: /byebooks/resolve
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/html/byebooks/byebooks/endpoints.py", line 73, in resolve_id
+    names.append(user['name'])
+TypeError: 'NoneType' object has no attribute '__getitem__'
+Internal Server Error: /byebooks/resolve
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/html/byebooks/byebooks/endpoints.py", line 73, in resolve_id
+    names.append(user['name'])
+TypeError: 'NoneType' object has no attribute '__getitem__'
+Internal Server Error: /byebooks/resolve
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/html/byebooks/byebooks/endpoints.py", line 73, in resolve_id
+    names.append(user['name'])
+TypeError: 'NoneType' object has no attribute '__getitem__'
+Internal Server Error: /byebooks/resolve
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/html/byebooks/byebooks/endpoints.py", line 73, in resolve_id
+    names.append(user['name'])
+TypeError: 'NoneType' object has no attribute '__getitem__'
+Internal Server Error: /byebooks/resolve
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/html/byebooks/byebooks/endpoints.py", line 73, in resolve_id
+    try:
+TypeError: 'NoneType' object has no attribute '__getitem__'
+Internal Server Error: /byebooks/remove_wishlist
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/html/byebooks/byebooks/endpoints.py", line 159, in remove_wishlist
+    user = {'user_id': request.POST['user_id']}
+  File "/usr/local/lib/python2.7/site-packages/django/utils/datastructures.py", line 322, in __getitem__
+    raise MultiValueDictKeyError(repr(key))
+MultiValueDictKeyError: "'user_id'"
+Internal Server Error: /byebooks/remove_wishlist
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/html/byebooks/byebooks/endpoints.py", line 159, in remove_wishlist
+    user = {'user_id': request.POST['user_id']}
+  File "/usr/local/lib/python2.7/site-packages/django/utils/datastructures.py", line 322, in __getitem__
+    raise MultiValueDictKeyError(repr(key))
+MultiValueDictKeyError: "'user_id'"
+Internal Server Error: /byebooks/append_wishlist
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/html/byebooks/byebooks/endpoints.py", line 197, in append_wishlist
+    wish['edition'] = request.POST['edition']
+  File "/usr/local/lib/python2.7/site-packages/django/utils/datastructures.py", line 322, in __getitem__
+    raise MultiValueDictKeyError(repr(key))
+MultiValueDictKeyError: "'edition'"
+Internal Server Error: /byebooks/append_wishlist
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/html/byebooks/byebooks/endpoints.py", line 197, in append_wishlist
+    wish['edition'] = request.POST['edition']
+  File "/usr/local/lib/python2.7/site-packages/django/utils/datastructures.py", line 322, in __getitem__
+    raise MultiValueDictKeyError(repr(key))
+MultiValueDictKeyError: "'edition'"
+Internal Server Error: /byebooks/append_wishlist
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/html/byebooks/byebooks/endpoints.py", line 197, in append_wishlist
+    wish['edition'] = request.POST['edition']
+  File "/usr/local/lib/python2.7/site-packages/django/utils/datastructures.py", line 322, in __getitem__
+    raise MultiValueDictKeyError(repr(key))
+MultiValueDictKeyError: "'edition'"
+Not Found: /byebooks/
